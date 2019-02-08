@@ -1,0 +1,23 @@
+<ion-toolbar darkergraytoolbar class="toolbarPlan">
+
+  <!--<ion   #dateTime [(ngModel)]="hiddenDate" [hidden]="true"></ion>-->
+
+
+</ion-toolbar>
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding #content>
+  <h2>Welcome test acner!</h2>
+
+  <span ion-datepicker [disabledDates]="disabledDates" [max]="maxDate" [min]="minDate" [(value)]="initDate" locale="en-US" clear class="ScheduleDate">
+    <span>{{initDate | date}}<ion-icon name="clipboard" item-left></ion-icon> </span>
+  </span>
+
+
+
+</ion-content>
